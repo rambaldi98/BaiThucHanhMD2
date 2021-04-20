@@ -19,11 +19,21 @@ public class ManagarStudent {
         }
     }
 
-    public void searchStudentById(int id){
-        for ( Student st: students
-             ) {
-            if(st.getId() == id)
-                System.out.println(st);
+    public int searchStudentById(int id){
+//        for ( Student st: students
+//             ) {
+//            if(st.getId() == id)
+//                System.out.println(st);
+//        }
+        for(int i = 0; i < students.size(); i++){
+            if(students.get(i).getId() == id)
+                return i;
         }
+        return -1;
+
+    }
+
+    public Student showStudentById(int index){
+       return students.get(index);
     }
 }

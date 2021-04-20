@@ -34,6 +34,7 @@ public class Main {
         mana.addStudent(c);
         mana.showStudent();
         System.out.println();
-        mana.searchStudentById(1);
+//        System.out.println( mana.searchStudentById(1));
+        System.out.println(mana.showStudentById(mana.searchStudentById(1)));
     }
 }
